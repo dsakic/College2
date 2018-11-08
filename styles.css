@@ -1,0 +1,427 @@
+body, html {
+	font-family: cursive;
+	margin: 0;
+	padding-top: 15px;
+	font-size: 16px;
+}
+
+header {
+	display: block;
+	width: 100%;
+}
+
+.banner-image {
+    width: 85%;
+    height: 250px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: black;
+}
+li {
+	float: left;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	color: red;
+}
+
+ul a {
+	float: right;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+ul a:hover {
+	color: red;
+}
+
+h1{
+	text-align: center;	
+}
+
+
+h2 {
+	text-align: center;
+	color: red;
+}
+
+main {
+	max-width: 980px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+small {
+	color: red;
+}
+
+p {
+	margin: 10px 0;
+	line-height: 22px;
+	letter-spacing: 1px;
+}
+
+.news img {
+	width: 12%;
+	float: left;
+	padding: 8px 0;
+	margin: 0 16px 0 0;
+}
+
+.news h3 {
+	margin: 4px 0 0 0;
+	font-size: 20px;
+	color: black;
+}
+
+.news time {
+	font-size: 90%;
+	font-style: italic;
+}
+
+.news hr {
+	margin: 16px 0;
+	border: 1px dotted red;
+	clear: both;
+}
+
+
+figure { 
+    float: left;
+    border: 1px solid black; 
+    text-align: center;
+    margin: 0 10px 0 0;
+    padding: 8px; 
+}
+
+figcaption{
+	padding-top: 5px;
+	color: red;
+}
+
+.gallery figure {
+    flex: 1 auto;
+	float: none;
+	margin: 0 5px 5px 0;
+}
+
+.gallery {
+    display: flex;
+	flex-flow: row wrap;
+}
+
+.clearfix:after {
+    display: block;
+    content: '\0A0';
+    width: 100%;
+    clear: both;
+    height: 0;
+}
+
+img {
+	width: 100%;
+}
+
+
+video {
+	margin: 0 10px 0 0;
+	float: left;
+}
+
+#contact, #register, #signin {
+	width: 70%;
+	margin: 0 auto;
+	padding: 20px 0 20px 0;
+	border: 3px double red;
+	box-sizing: border-box;
+	border-radius: 20px;
+}
+
+label {
+    display: block;
+    margin: 5px 0 5px 15px;
+}
+
+textarea {
+	width: 94%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+	margin: 5px 0 5px 15px;
+	font-size: 95%;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=file], select {
+    width: 94%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+	margin: 5px 0 5px 15px;
+	font-size: 95%;
+}
+
+input[type=submit] {
+    display: block;
+	background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    margin: 20px auto 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	width: 25%;
+}
+
+input[type=submit]:hover {
+    color: red;
+}
+
+footer {
+    background-color: black;
+    color: white;
+	text-align: center;
+	height: 80px;
+	margin-top: 100px;
+}
+
+footer p {
+	color: white;
+	text-align: center;	
+	padding: 10px 0 0 0;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+footer a:hover {
+	color: red;
+}
+
+.icon-bar a {
+	font-size: 15px;
+}
+
+.icon-bar a:hover {
+	color: white;
+}
+
+.facebook {
+	color: #3B5998;
+}
+  
+.twitter {
+	color: #55ACEE;
+}
+  
+.google {
+	color: #dd4b39;
+}
+  
+.linkedin {
+	color: #007bb5;
+}
+  
+.youtube {
+	color: #bb0000;
+}
+
+
+@media screen and (max-width: 700px) {
+	figure {
+		width: 90%;
+	}
+	.news img {
+		width: 90%;	
+	}
+	
+	label {
+		display: block;
+		margin: 5px 0 5px 15px;
+	}
+	
+	input[type=text], input[type=email], input[type=password], input[type=file], select, textarea  {
+		width: 75%;
+		padding: 5px;
+		border: 1px solid #ccc;
+		border-radius: 10px;
+		box-sizing: border-box;
+		margin: 5px 0 5px 15px;
+		font-size: 55%;
+	}
+	input[type=submit] {
+		display: block;
+		background-color: black;
+		color: white;
+		font-size: 16px;
+		padding: 10px;
+		margin: 20px auto 0;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		width: 70%;
+	}
+	
+	input[type=submit]:hover {
+		color: red;
+	}
+	
+	video {
+		float: none;
+		height: 240px;
+		width: 320px;
+	}
+
+}
+
+
+
+/************
+    admin
+*************/
+
+
+.AddLink {
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    color: #FFFFFF !important;
+    display: block;
+    background-color: black;
+    margin-bottom: 20px ;
+    padding: 5px;
+    width: 120px;
+    text-align: center;
+}
+
+table {
+	background: #f5f5f5;
+	border-collapse: separate;
+	box-shadow: inset 0 1px 0 #fff;
+	font-size: 12px;
+	line-height: 24px;
+	margin: 30px auto;
+	text-align: left;
+	width: 100%;
+}	
+
+th {
+	background: url(http://jackrugile.com/images/misc/noise-diagonal.png), linear-gradient(#777, #444);
+	border-left: 1px solid #555;
+	border-right: 1px solid #777;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #333;
+	box-shadow: inset 0 1px 0 #999;
+	color: #fff;
+	font-weight: bold;
+	padding: 10px 15px;
+	position: relative;
+	text-shadow: 0 1px 0 #000;	
+}
+
+th:after {
+	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+	content: '';
+	display: block;
+	height: 25%;
+	left: 0;
+	margin: 1px 0 0 0;
+	position: absolute;
+	top: 25%;
+	width: 100%;
+}
+
+th:first-child {
+	border-left: 1px solid #777;	
+	box-shadow: inset 1px 1px 0 #999;
+}
+
+th:last-child {
+	box-shadow: inset -1px 1px 0 #999;
+}
+
+td {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #e8e8e8;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 10px 15px;
+	position: relative;
+	transition: all 300ms;
+}
+
+td:first-child {
+	box-shadow: inset 1px 0 0 #fff;
+}	
+
+td:last-child {
+	border-right: 1px solid #e8e8e8;
+	box-shadow: inset -1px 0 0 #fff;
+}	
+
+tr {
+	background: url(http://jackrugile.com/images/misc/noise-diagonal.png);	
+}
+
+tr:nth-child(odd) td {
+	background: #f1f1f1 url(http://jackrugile.com/images/misc/noise-diagonal.png);	
+}
+
+tr:last-of-type td {
+	box-shadow: inset 0 -1px 0 #fff; 
+}
+
+tr:last-of-type td:first-child {
+	box-shadow: inset 1px -1px 0 #fff;
+}	
+
+tr:last-of-type td:last-child {
+	box-shadow: inset -1px -1px 0 #fff;
+}	
+
+tbody:hover td {
+	color: transparent;
+	text-shadow: 0 0 3px #aaa;
+}
+
+tbody:hover tr:hover td {
+	color: #444;
+	text-shadow: 0 1px 0 #fff;
+}
+	
+h3 {
+    color: black;
+    padding: 15px 0 0 0;
+}
+
+#admin ul {
+    background-color: black;  
+}
+#admin  li a {
+	color: white;
+}
+#admin li a:hover {
+	color: red;
+}
